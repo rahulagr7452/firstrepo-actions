@@ -1,4 +1,4 @@
-name: Test
+name: Omnytrix
 'on':
   workflow_dispatch:
     inputs:
@@ -31,8 +31,9 @@ jobs:
     needs: Build
     environment: Load-Test
     steps:
-      - run: echo "🧪 Testing..."
-             sleep 15\n"
+      - run: |
+          echo "🧪 Testing..."
+          sleep 15\n"
   Production:
     runs-on: ubuntu-latest
     needs:
