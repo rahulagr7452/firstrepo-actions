@@ -2,6 +2,9 @@ name: Reuse other workflow
 
 on: [workflow_dispatch]
 
+env:
+  myname: Rahul Agrawal
+
 jobs:
   call-workflow:
     uses: ./.github/workflows/reusable.yml
